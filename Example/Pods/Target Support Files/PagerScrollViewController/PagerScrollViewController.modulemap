@@ -1,0 +1,6 @@
+framework module PagerScrollViewController {
+  umbrella header "PagerScrollViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

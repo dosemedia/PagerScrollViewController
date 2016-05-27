@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/PagerScrollViewController.svg?style=flat)](http://cocoapods.org/pods/PagerScrollViewController)
 [![Platform](https://img.shields.io/cocoapods/p/PagerScrollViewController.svg?style=flat)](http://cocoapods.org/pods/PagerScrollViewController)
 
+PagerScrollViewController is a UIScrollView extension that allows for paging UIViewControllers efficently. Similar to Android's implementation of ViewPager and Fragments.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Swift 2.0
 
 ## Installation
 
@@ -20,9 +24,10 @@ it, simply add the following line to your Podfile:
 pod "PagerScrollViewController"
 ```
 
-## Author
+## Contributors
 
-Michael Blatter, mblatter@spartzinc.com
+[Michael Blatter](https://github.com/mikeblatter/)
+[Brad Woodard](https://github.com/BCWoodard)
 
 ## License
 

@@ -1,0 +1,16 @@
+PODS:
+  - PagerScrollViewController (0.1.0)
+
+DEPENDENCIES:
+  - PagerScrollViewController (from `../`)
+
+EXTERNAL SOURCES:
+  PagerScrollViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PagerScrollViewController: 45243f60c677f73aa1acc540040d3c386e585aa1
+
+PODFILE CHECKSUM: 685ae39b673769ae7161ba55188a2799f9c23262
+
+COCOAPODS: 1.0.0

@@ -1,0 +1,22 @@
+{
+  "name": "PagerScrollViewController",
+  "version": "0.1.0",
+  "summary": "A short description of PagerScrollViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PagerScrollViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Michael Blatter": "mblatter@spartzinc.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PagerScrollViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PagerScrollViewController/Classes/**/*"
+}

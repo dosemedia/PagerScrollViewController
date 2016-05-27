@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PagerScrollViewController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PagerScrollViewController.'
+  s.summary          = 'UIScrollView Extension for paging UIViewControllers'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+PagerScrollViewController is a UIScrollView extension that allows for paging UIViewControllers efficently. Similar to Android's implementation of ViewPager and Fragments.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/PagerScrollViewController'
+  s.homepage         = 'https://github.com/dosemedia/PagerScrollViewController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Michael Blatter' => 'mblatter@spartzinc.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/PagerScrollViewController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Michael Blatter' => 'mblatter@dose' }
+  s.source           = { :git => 'https://github.com/dosemedia/PagerScrollViewController.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PagerScrollViewController/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PagerScrollViewController' => ['PagerScrollViewController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

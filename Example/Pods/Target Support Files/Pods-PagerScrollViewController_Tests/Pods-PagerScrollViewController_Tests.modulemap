@@ -1,0 +1,6 @@
+framework module Pods_PagerScrollViewController_Tests {
+  umbrella header "Pods-PagerScrollViewController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
