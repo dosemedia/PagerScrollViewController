@@ -56,7 +56,7 @@ public class PagerScrollViewController: UIViewController, UIScrollViewDelegate, 
     var loadMoreItems = false
     var currentlyLoadingPages = false
     
-    func setPosition(page: Int) {
+    public func setPosition(page: Int) {
         requestedPage = page
         
         switch(self.orientation) {
