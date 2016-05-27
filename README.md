@@ -1,6 +1,5 @@
 # PagerScrollViewController
 
-[![CI Status](http://img.shields.io/travis/Michael Blatter/PagerScrollViewController.svg?style=flat)](https://travis-ci.org/Michael Blatter/PagerScrollViewController)
 [![Version](https://img.shields.io/cocoapods/v/PagerScrollViewController.svg?style=flat)](http://cocoapods.org/pods/PagerScrollViewController)
 [![License](https://img.shields.io/cocoapods/l/PagerScrollViewController.svg?style=flat)](http://cocoapods.org/pods/PagerScrollViewController)
 [![Platform](https://img.shields.io/cocoapods/p/PagerScrollViewController.svg?style=flat)](http://cocoapods.org/pods/PagerScrollViewController)
