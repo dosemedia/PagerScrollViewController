@@ -8,11 +8,11 @@
 
 import UIKit
 
-enum PagerScrollViewControllerOrientation {
+public enum PagerScrollViewControllerOrientation {
     case Horizontal, Vertical
 }
 
-@objc protocol PagerScrollViewControllerDelegate {
+@objc public protocol PagerScrollViewControllerDelegate: class {
     func getPageCount() -> Int //Supply count of pages
     func getController(page: Int) -> UIViewController //Supply UIController for given page
     
@@ -34,26 +34,26 @@ class PagerUIScrollView: UIScrollView {
     }
 }
 
-class PagerScrollViewController: UIViewController, UIScrollViewDelegate, PagerUIScrollViewDelegate {
-    var parentController: UIViewController!
-    var parentView: UIView!
-    var scrollView: PagerUIScrollView!
+public class PagerScrollViewController: UIViewController, UIScrollViewDelegate, PagerUIScrollViewDelegate {
+    public var parentController: UIViewController!
+    public var parentView: UIView!
     
-    var delegate: PagerScrollViewControllerDelegate?
+    public var delegate: PagerScrollViewControllerDelegate?
     
     //Configuration
-    var orientation = PagerScrollViewControllerOrientation.Horizontal
-    var pagesLoadedAroundVisiblePage = 1
-    var itemsBeforeEndLoadMore = 5
+    public var orientation = PagerScrollViewControllerOrientation.Horizontal
+    public var pagesLoadedAroundVisiblePage = 1
+    public var itemsBeforeEndLoadMore = 5
     
+    //Private
     var viewControllers: [UIViewController?] = []
     
     var requestedPage = 0
     var currentPage = 0
     var previousPage = 0
     
+    var scrollView: PagerUIScrollView!
     var loadMoreItems = false
-    
     var currentlyLoadingPages = false
     
     func setPosition(page: Int) {
@@ -67,7 +67,7 @@ class PagerScrollViewController: UIViewController, UIScrollViewDelegate, PagerUI
         }
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         addScrollView()
@@ -82,21 +82,21 @@ class PagerScrollViewController: UIViewController, UIScrollViewDelegate, PagerUI
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override public func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         update()
         setPosition(requestedPage)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         update()
         setPosition(requestedPage)
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         //Remove all other pages, except current
@@ -126,7 +126,7 @@ class PagerScrollViewController: UIViewController, UIScrollViewDelegate, PagerUI
     }
     
     //Scroll View Delegates
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         requestedPage = currentPosition()
         
         update()
