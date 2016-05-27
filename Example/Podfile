@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PagerScrollViewController_Example' do
+  pod 'PagerScrollViewController', :path => '../'
+
+  target 'PagerScrollViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
