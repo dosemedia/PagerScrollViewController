@@ -11,7 +11,7 @@ PagerScrollViewController is a UIScrollView extension that allows for paging UIV
 1. Very simple/lightweight library - (~400 lines of code)
 2. Vertical and horizontal support, also supports orientation changes 
 3. Infinite scroll ability
-4. Creates UIViewControllers around current page to create a seamless paging transition
+4. Creates UIViewController's around current page to create a seamless paging transition
 5. Memory Management - didReceiveMemoryWarning will trigger removal of all controllers except the current one the user is on
 
 ## Example in Source
@@ -81,6 +81,7 @@ func loadMoreItems(callback: () -> ()) {}
 ## Contributors
 
 [Michael Blatter](https://github.com/mikeblatter/)
+
 [Brad Woodard](https://github.com/BCWoodard)
 
 ## License
