@@ -25,7 +25,9 @@ class ViewController: UIViewController, PagerScrollViewControllerDelegate {
         pagerScrollViewController.delegate = self
         
         //Configuration
-        pagerScrollViewController.orientation = PagerScrollViewControllerOrientation.Horizontal
+        pagerScrollViewController.orientation = PagerScrollViewControllerOrientation.Horizontal //Default Horizontal
+        pagerScrollViewController.pagesLoadedAroundVisiblePage = 1 //Default 1
+        pagerScrollViewController.itemsBeforeEndLoadMore = 5 //Default 5
         
         //Add pager to self
         addChildViewController(pagerScrollViewController)
